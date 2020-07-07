@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTROKIDS|sol</title>
+    <link rel="icon" href="../img/icono1.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/activiIntroPlanets.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <header>
+                <div class="col-sm-4 col-xs-4 col-md-2 col-lg-2">
+                    <img src="../img/logo uptc blanco.png" width="100%">
+                </div>
+                <div class="col-sm-5 col-xs-5 col-md-7 col-lg-7">
+                    <!--<marquee direction="up"></marquee><h2 class="titulo">ASTROKIDS</h2></marquee>-->
+                    <img src="../img/gif-astrokids.gif" alt="" width="100%" class="img-ti">
+                </div>
+                <div class="col-sm-3 col-xs-3 col-md-3 col-lg-3">
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <section>
+                <div class="col-sm-1 col-xs-2 col-md-1 col-lg-1">
+                    <a href="../index.html"> <img src="../img/icono.png" alt="" width="100%" class="icos"></a>
+                    <a href="sistema.html"> <img src="../img/icono1.png" alt="" width="100%" class="icos"></a>
+                    <img src="../img/icono2.png" alt="" width="100%" class="icos">
+                    <img src="../img/icono3.png" alt="" width="100%" class="icos">
+                </div>
+                <div class="col-sm-10 col-xs-9 col-md-10 col-lg-10">
+                    <img class="instruccion" id="instruccion" src="../img/imgs/voz.png" onclick="sonidoI()">
+                    <div class="col-sm-12 col-xs-2 col-md-12 col-lg-12 fondoPP">
+
+                        <img onclick="mostrarSection(0)" class="mmp" id="mercurio" src="../img/imgs/mercurio.png">
+                        <img onclick="mostrarSection(1)" class="mmp" id="venus" src="../img/imgs/venus.png">
+                        <img onclick="mostrarSection(2)" class="mmp" id="tierra" src="../img/imgs/tierra.png">
+                        <img onclick="mostrarSection(3)" class="mmp" id="marte" src="../img/imgs/marte.png">
+                        <img onclick="mostrarSection(4)" class="mmp" id="jupiter" src="../img/imgs/jupiter.png">
+                        <img onclick="mostrarSection(5)" class="mmp" id="saturno" src="../img/imgs/saturno.png">
+                        <img onclick="mostrarSection(6)" class="mmp" id="urano" src="../img/imgs/urano.png">
+                        <img onclick="mostrarSection(7)" class="mmp" id="neptuno" src="../img/imgs/neptuno.png">
+
+                        <div id="nom" class="descripcion">
+
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <footer>
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                    <!--<a href="../index.html"> <img src="../img/FlechaIzquierda.png" alt="" class="icos-footer2" width="100px"></a>-->
+                    <img src="../img/ayuda.png" alt="" class="icos-footer icos2">
+                    <img src="../img/creditos.png" alt="" class="icos-footer icos2">
+                    <a href="sistema.html"> <img src="../img/FlechaDerecha.png" alt="" class="icos-footer2 icos2" width="100px"></a>
+                </div>
+                Copyright &copy; <strong>
+                    <script>document.write(new Date().getFullYear());</script></strong> Hector Arias & Marcos Rodriguez
+                Software
+                Para Preescolar
+            </footer>
+        </div>
+    </div>
+</body>
+<audio id="audio_instru">
+    <source src="../audios/instrucción.mp3" type="">
+</audio>
+</html>
